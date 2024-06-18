@@ -10,10 +10,9 @@ on:
 
 jobs:
   build:
-    if: github.repository == 'lichongjia/JetBrains-Sarasa-Mono'
     runs-on: ubuntu-latest
     env:
-      NERD_FONTS_VERSION: v2.1.0
+      NERD_FONTS_VERSION: v3.2.1
     steps:
       - uses: actions/checkout@v2
       # 下载 更纱黑体
