@@ -20,8 +20,8 @@ jobs:
         run: |
           LATEST_TAG=`curl --silent "https://api.github.com/repos/be5invis/Sarasa-Gothic/releases/latest" | jq -r .tag_name`
           echo Downloading Sarasa Gothic ${LATEST_TAG}
-          curl -L https://github.com/be5invis/Sarasa-Gothic/releases/download/${LATEST_TAG}/sarasa-gothic-ttf-${LATEST_TAG:1}.7z -O
-          7z x *.7z
+          curl -L https://github.com/be5invis/Sarasa-Gothic/releases/download/${LATEST_TAG}/sarasa-gothic-ttf-${LATEST_TAG:1}.zip -O
+          unzip x *.unzip
       # 安装 FontForge
       - name: Install FontForge
         run: sudo apt install fontforge -y
